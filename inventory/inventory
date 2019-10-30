@@ -1,0 +1,4 @@
+docker_manager ansible_host=ramdops2c.mylabserver.com
+
+[docker_worker]
+ramdops[3:4]c.mylabserver.com
