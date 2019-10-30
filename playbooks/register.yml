@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+    - name: Create a file
+      file:
+        path: /tmp/newfile
+        state: touch
+      register: output
+    - name: debug info
+      debug: msg="Register output is {{ output }}"
+    - name: Remove a file
+      file:
+        path: /tmp/newfile
+        state: absent
+      
