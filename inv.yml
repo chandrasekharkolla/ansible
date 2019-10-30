@@ -1,0 +1,9 @@
+all:
+  children:
+    docker_manager:
+      hosts:
+        ramdops2c.mylabserver.com:
+    docker_worker:
+      hosts:
+        ramdops3c.mylabserver.com:
+        ramdops4c.mylabserver.com:
